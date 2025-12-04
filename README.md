@@ -14,6 +14,7 @@
 </div>
 
 ## Table of contents
+- [News](#news)
 - [Overview](#overview)
 - [Demo](#demo)
 - [Features](#features)
@@ -28,6 +29,9 @@
 - [Available scripts](#available-scripts)
 - [Troubleshooting](#troubleshooting)
 - [Star history](#star-history)
+
+## News
+🎉 **Our site is ready!** Visit the live application at **[visualize.top/zh/ai-comic-generator](https://visualize.top/zh/ai-comic-generator)** – transform your PDFs into Doraemon comics instantly!
 
 ## Overview
 **Paper Comicizer** ingests any academic PDF, asks Gemini 3 Pro to summarize the core ideas, plans a Doraemon-themed lesson, and renders every page of the lesson as a comic strip. The UI focuses on clarity: upload a file, monitor three workflow stages (analyze → plan → generate), and browse the generated comic with thumbnails and page navigation.
