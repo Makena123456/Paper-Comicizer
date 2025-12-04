@@ -124,7 +124,16 @@ npm run preview      # optional: serve the dist folder locally
 - **Stuck on analysis** – Ensure the PDF is under Gemini’s payload limit and your API key has sufficient quota.
 - **Blank images** – Regenerate; Gemini occasionally produces empty frames if the prompt budget is exceeded.
 
+## Find us
+
+Wechat Group
+![b5b01fffde3fcad1d4d0b8bc556f716](https://github.com/user-attachments/assets/f6562daa-f74b-47bf-bb3c-ba02f7a80a63)
+
+Email: support@visualize.top
+
+
 ## Star history
 [![Star History Chart](https://api.star-history.com/svg?repos=redreamality/Paper-Comicizer&type=Date)](https://star-history.com/#redreamality/Paper-Comicizer&Date)
+
 
 Happy comicizing! 🎨📚
